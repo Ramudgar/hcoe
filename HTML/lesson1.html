@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lesson 1</title>
+    <meta name="author" content="Ram Udgar Yadav" />
+    <meta name="description" content="This is a simple HTML page." />
+
+    <style>
+      /* CSS */
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: rgba(243, 179, 137, 0.25);
+      }
+      header {
+        background-color: rgba(242, 164, 112, 0.25);
+        padding-top: 0px;
+        margin-top: 0px;
+      }
+      #header {
+        margin: 0px;
+        padding: 10px;
+      }
+
+      nav {
+        background-color: hsl(24, 90%, 46%);
+        text-align: center;
+      }
+      /* nav ul li{
+        display: inline-block ;
+        padding: 10px;
+      } */
+
+      nav ul {
+        padding: 0px;
+        padding: 0px 20px;
+        margin: 0px;
+      }
+      .nav-item {
+        display: inline-block;
+        padding: 20px;
+        margin: 0px 10px;
+      }
+
+      .nav-item a {
+        text-decoration: none;
+        color: white;
+      }
+
+      #logo {
+        float: left;
+        font-size: 28px;
+        font-weight: 900;
+        line-height: 15px;
+      }
+      #login_btn,
+      #signup_btn {
+        float: right;
+      }
+      #login_btn a,
+      #signup_btn a {
+        background-color: white;
+        color: hsl(24, 90%, 46%);
+        padding: 10px 20px;
+        border-radius: 10px;
+        text-decoration: none;
+      }
+    </style>
+
+    <link rel="stylesheet" href="../assets/css/lesson1.css" />
+  </head>
+  <body>
+    <header>
+      <h1
+        id="header"
+        style="
+          color: hsl(24, 90%, 46%);
+          font-size: 60px;
+          font-weight: 900;
+          text-align: center;
+          font-style: normal;
+        "
+      >
+        Ram's Portfolio
+      </h1>
+    </header>
+    <!-- nav bar section start -->
+    <nav>
+      <ul id="nav-ul">
+        <li id="logo" class="nav-item"><a href="">Logo</a></li>
+        <li class="nav-item"><a href="#home">Home</a></li>
+        <li class="nav-item"><a href="#about">About</a></li>
+        <li class="nav-item"><a href="#projects">Projects</a></li>
+        <li class="nav-item"><a href="#contact">Contact</a></li>
+        <li class="nav-item"><a href="#map">Map</a></li>
+        <li id="login_btn" class="nav-item"><a href="">Login</a></li>
+        <li id="signup_btn" class="nav-item"><a href="">Sign Up</a></li>
+      </ul>
+    </nav>
+    <!-- navbar section end -->
+
+    <!-- Hero section start -->
+    <section id="hero-section">
+      <div class="content">
+        <h2>Welcome to my Portfolio</h2>
+        <p>
+          I am a web developer based in Kathmandu, Nepal. I love to create
+          beautiful and responsive websites.
+        </p>
+      </div>
+
+      <div class="img-container">
+        <img
+          src="https://media.istockphoto.com/id/1197562894/photo/pashupatinath-temple-in-kathmandu.jpg?s=612x612&w=0&k=20&c=0ORGcfXJqBVKaNVF4GifoTCvQGnqPGONZs6RqHpj6t4="
+          alt="pashupatinath_image"
+          height="250"
+          width="350"
+        />
+      </div>
+    </section>
+
+    <!-- Hero section end -->
+
+    <!-- skill section  start-->
+     
+    <section id="skills">
+      <h2>My Skills:</h2>
+      <ul>
+        <li>HTML & CSS</li>
+        <li>JavaScript</li>
+        <li>React</li>
+        <li>Node.js</li>
+      </ul>
+    </section>
+    
+    <!-- skill section end -->
+
+    <div>
+      <h2>Projects</h2>
+      <p>Here is a list of some of my recent projects:</p>
+      <ol type="1" start="5">
+        <li>Portfolio Website</li>
+        <li>Weather App</li>
+      </ol>
+
+      <div id="contact-form">
+        <h2>Contact Me</h2>
+        <form action="">
+          <label for="userName">Name:</label>
+          <input type="text" name="" id="userName" />
+          <br />
+          <label for="userEmail">Email:</label>
+          <input type="email" name="" id="userEmail" />
+          <br />
+          <label for="subject"> Subject:</label>
+          <select name="subject" id="subject">
+            <option value="feedback">Feedback</option>
+            <option value="inquiry" selected>inquiry</option>
+            <option value="">complaint</option>
+          </select>
+
+          <br />
+          <!-- radio button -->
+          <label for="">preffered Contact Method:</label>
+          <input type="radio" name="contact" value="email" checked />Email
+          <input type="radio" name="contact" value="phone" />Phone
+
+          <br />
+          <p>Interested Services:</p>
+          <input type="checkbox" name="services" value="web" id="web" />
+          <label for="web">web developoment</label>
+          <input type="checkbox" name="services" value="mobile" />Mobile
+          Development
+          <input type="checkbox" name="services" value="desktop" />Desktop
+          Development
+          <br />
+          <label for="message">Message:</label> <br />
+          <textarea rows="8" cols="30" name="" id="message"></textarea>
+
+          <br />
+          <br />
+          <!-- File upload -->
+          <label for="file">Upload File:</label>
+          <input type="file" name="file" id="file" />
+          <br />
+          <br />
+          <!-- multiple fileupload -->
+          <label for="file">Upload Multiple Files:</label>
+          <input type="file" name="file" id="file" multiple />
+          <br />
+          <br />
+          <!-- <button>Submit</button> -->
+          <input type="submit" value="Submit" />
+        </form>
+      </div>
+    </div>
+
+    <div>
+      <!-- Iframe -->
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3531.013292292073!2d85.3383663146347!3d27.71085898279468!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb19f1b1b1b1b1%3A0x3e1b1b1b1b1b1b1!2sPashupatinath%20Temple!5e0!3m2!1sen!2snp!4v1629780000000!5m2!1sen!2snp"
+        width="600"
+        height="450"
+        style="border: 0"
+        allowfullscreen=""
+        loading="lazy"
+      ></iframe>
+    </div>
+
+    <div>
+      <!-- audio -->
+      <audio controls>
+        <source
+          src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"
+          type="audio/mpeg"
+        />
+        Your browser does not support the audio element.
+      </audio>
+    </div>
+
+    <div>
+      <!-- video -->
+      <video width="320" height="240" controls>
+        <source
+          src="https://www.w3schools.com/html/mov_bbb.mp4"
+          type="video/mp4"
+        />
+        Your browser does not support the video tag.
+      </video>
+    </div>
+
+    <div>
+      <!-- youtube embedding -->
+      <iframe
+        width="560"
+        height="315"
+        src="https://www.youtube.com/embed/7lCDEYXw3mM"
+        title="YouTube video
+      player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write;
+      encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen
+      ></iframe>
+    </div>
+
+    <iframe
+      width="560"
+      height="315"
+      src="https://www.youtube.com/embed/J6NJKenMbdc?si=p6dcSP3FeTuDRsWq"
+      title="YouTube video player"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      referrerpolicy="strict-origin-when-cross-origin"
+      allowfullscreen
+    ></iframe>
+
+    <!-- insta embedding -->
+    <blockquote
+      class="instagram-media"
+      data-instgrm-captioned
+      data-instgrm-permalink="https://www.instagram.com/p/CTl1Z9vJ9Zb/"
+      data-instgrm-version="13"
+      style="
+        background: #f9f9f9;
+        border: 1px solid #efefef;
+        margin: 1em 0px;
+        max-width: 540px;
+        min-width: 326px;
+        padding: 0px;
+      "
+    >
+      <div style="padding: 16px">
+        <a
+          href="https://www.instagram.com/p/CTl1Z9vJ9Zb/"
+          style="
+            background-color: #f9f9f9;
+            color: #000;
+            display: block;
+            padding: 14px 0;
+            text-align: center;
+            text-decoration: none;
+            width: 100%;
+          "
+          >View this post on Instagram</a
+        >
+      </div>
+    </blockquote>
+    <script async src="//www.instagram.com/embed.js"></script>
+
+    <footer>
+      <p>&copy; 2021 Ram's Portfolio</p>
+    </footer>
+  </body>
+</html>
