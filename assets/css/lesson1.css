@@ -20,12 +20,11 @@
 #skills {
   padding: 20px 30px;
   margin: 20px;
-
 }
 
 #skills h2 {
   color: #333;
-  font-size:2rem;
+  font-size: 2rem;
   font-weight: 600;
 }
 
@@ -48,4 +47,68 @@
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+#projects {
+  padding: 30px;
+  margin: 20px;
+  background-color: whitesmoke;
+  box-shadow: 10px 10px 10px #efe8e8;
+  border-radius: 10px;
+}
+
+#projects h2 {
+  color: #333;
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+#card {
+  padding: 20px;
+  margin: 20px;
+  background-color: rgba(236, 159, 131, 0.5);
+  width: 300px;
+  border-radius: 10px;
+  box-shadow: 10px 10px 10px #efe8e8;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#card:hover {
+  transform: translate(0, -10px);
+  transition: all 0.5s;
+  cursor: pointer;
+}
+
+#card img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+#project-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#inner-content button {
+  padding: 10px 20px;
+  background-color: orangered;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+footer{
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    margin-top:20px;
 }
